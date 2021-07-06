@@ -597,3 +597,16 @@ header .navbar ul li a:hover{
   .skill-section{
       padding: 20%;
   }
+
+  
+  @media (max-width:768px){
+
+    .skill-section{
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+    .skill-bars .bar .progress-line{
+        width: 60%;
+    }
+ 
+ }
