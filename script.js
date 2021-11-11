@@ -1,38 +1,36 @@
 $(document).ready(function(){
+    $(window).scroll(function(){
+        // sticky navbar on scroll script
+        if(this.scrollY > 20){
+            $('.navbar').addClass("sticky");
+        }else{
+            $('.navbar').removeClass("sticky");
+        }
+    });
 
-  $('#menu').click(function(){
-    $(this).toggleClass('fa-times');
-    $('header').toggleClass('toggle');
-  });
+    $('.navbar .menu li a').click(function(){
+        // applying again smooth scroll on menu items click
+        $('html').css("scrollBehavior", "smooth");
+    });
 
-  $(window).on('scroll load',function(){
+    // toggle menu/navbar script
+    $('.menu-btn').click(function(){
+        $('.navbar .menu').toggleClass("active");
+        $('.menu-btn i').toggleClass("active");
+    });
 
-    $('#menu').removeClass('fa-times');
-    $('header').removeClass('toggle');
+    // typing text animation script
+    var typed = new Typed(".typing", {
+        strings: ["Web Developer", "Designer", "Mobile Developer"],
+        typeSpeed: 100,
+        backSpeed: 60,
+        loop: true
+    });
 
-    if($(window).scrollTop() > 0){
-      $('.top').show();
-    }else{
-      $('.top').hide();
-    }
-
-  });
-
-  // smooth scrolling 
-
-  $('a[href*="#"]').on('click',function(e){
-
-    e.preventDefault();
-
-    $('html, body').animate({
-
-      scrollTop : $($(this).attr('href')).offset().top,
-
-    },
-      500, 
-      'linear'
-    );
-
-  });
-
+    var typed = new Typed(".typing-2", {
+        strings: ["Web Developer", "Designer", "Mobile Developer"],
+        typeSpeed: 100,
+        backSpeed: 60,
+        loop: true
+    });
 });
