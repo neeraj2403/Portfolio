@@ -361,7 +361,7 @@ section .title::before{
     color: #111;
   
     
-    margin: 10px 20px;
+    margin: 10px 0px;
 }
 .contact .contact-content .row{
     display: flex;
