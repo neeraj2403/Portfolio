@@ -29,6 +29,8 @@ html{
 /* all similar content styling codes */
 section{
     padding: 100px 0;
+    width: 100%;
+
 }
 .max-width{
     max-width: 1300px;
@@ -222,7 +224,7 @@ section .title::before{
     background: rgb(17, 17, 17);
 }
 .projects .title::before,
-.projects1 .title::before,
+.projects1 .title::before
 {
     background: #fff;
     width: 210px;
@@ -336,7 +338,12 @@ section .title::before{
 /* contact section styling */
 .contact{
     background-color: #f1f1f1;
+    align-items: center;
+    justify-items: center;
+    display: flex;
+    width: 100%;
 }
+
 .contact .contact-content .column{
     width: calc(50% - 30px);
 }
@@ -349,9 +356,10 @@ section .title::before{
     text-align: justify;
 }
 .contact .contact-content .icons{
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr 1fr  ;
     color: #111;
+  
     
     margin: 10px 0;
 }
@@ -672,4 +680,12 @@ h4{
 a{
     text-decoration: none;
     color: black;
+}
+
+
+@media (max-width: 761px) {
+    .contact .contact-content .icons{
+        grid-template-columns: 1fr  ;
+
+    }
 }
