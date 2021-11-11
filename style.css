@@ -361,11 +361,11 @@ section .title::before{
     color: #111;
   
     
-    margin: 10px 0;
+    margin: 10px 20px;
 }
 .contact .contact-content .row{
     display: flex;
-    padding-left: 70px;
+    /* padding-left: 70px; */
     height: 65px;
     align-items: center;
 }
