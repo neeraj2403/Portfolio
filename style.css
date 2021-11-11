@@ -52,8 +52,8 @@ section .title{
     text-align: center;
     font-size: 40px;
     font-weight: 500;
-    margin-bottom: 60px;
-    padding-bottom: 20px;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
     font-family: 'Ubuntu', sans-serif;
 }
 section .title::before{
@@ -223,7 +223,7 @@ section .title::before{
 }
 .projects .title::before,
 .projects1 .title::before,
-.contact .title::before{
+{
     background: #fff;
     width: 210px;
 }
@@ -334,6 +334,9 @@ section .title::before{
 }
 
 /* contact section styling */
+.contact{
+    background-color: #f1f1f1;
+}
 .contact .contact-content .column{
     width: calc(50% - 30px);
 }
@@ -345,13 +348,21 @@ section .title::before{
 .contact .contact-content .left p{
     text-align: justify;
 }
-.contact .contact-content .left .icons{
+.contact .contact-content .icons{
+    display: flex;
+    flex-direction: row;
+    color: #111;
+    
     margin: 10px 0;
 }
 .contact .contact-content .row{
     display: flex;
+    padding-left: 70px;
     height: 65px;
     align-items: center;
+}
+.contact h2{
+    color: #111;
 }
 .contact .contact-content .row .info{
     margin-left: 30px;
@@ -364,7 +375,7 @@ section .title::before{
     font-weight: 500;
 }
 .contact .contact-content .info .head a{
-    color: #fff;
+    color: #000;
     font-weight: 500;
 }
 .contact .contact-content .info .head a:hover {
@@ -372,7 +383,7 @@ section .title::before{
     transition: all 0.3s ease;
   }
 .contact .contact-content .info .sub-title{
-    color: #f1f1f1;
+    color: #111;
 }
 .contact .right form .fields{
     display: flex;
