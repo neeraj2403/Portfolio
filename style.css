@@ -643,7 +643,7 @@ footer span.icons{
 
  .box-container .box i{
     position: absolute;
-    top:-1.5rem; left:-2.5rem;
+    top:-1.5rem; left: -2.2rem;
     height:4rem;
     width: 4rem;
     border-radius: 50%;
@@ -688,4 +688,10 @@ a{
         grid-template-columns: 1fr  ;
 
     }
+}
+.box img{
+    height: 50px;
+    width: 70px;
+    object-fit: cover;
+    border-radius: 6px;
 }
